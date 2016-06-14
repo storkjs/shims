@@ -1,0 +1,24 @@
+{
+  "name": "storkjs-shims",
+  "version": "1.0.0",
+  "description": "Useful shims and polyfills for extra javascript functionality and for IE too",
+  "license": "MIT",
+  "author": {
+    "name": "Noam Lin",
+    "email": "noam.lin@ebs.com"
+  },
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "watch": "grunt watch-files"
+  }
+}

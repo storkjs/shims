@@ -1,0 +1,27 @@
+{
+  "name": "stork-shims",
+  "description": "Useful shims and polyfills for extra javascript functionality and for IE too",
+  "private": false,
+  "main": [
+    "src/shims.js"
+  ],
+  "authors": [
+    "Noam Lin <noamlin@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "polyfill",
+    "polyfills",
+    "shim",
+    "shims",
+    "javascript"
+  ],
+  "homepage": "https://github.com/storkjs/shims",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
