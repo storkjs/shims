@@ -14,14 +14,20 @@
     "polyfills",
     "shim",
     "shims",
-    "javascript"
+    "javascript",
+    "ie"
   ],
   "homepage": "https://github.com/storkjs/shims",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:storkjs/shims.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "src",
+    "Gruntfile.js",
+    "package.json"
   ]
 }

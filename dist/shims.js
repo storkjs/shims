@@ -34,11 +34,22 @@
       y: yPos
     };
   };
-  Element.prototype.getIndex = function getIndex() {
-    for (var i = 0; i < this.parentNode.childNodes.length; i++) {
-      if (this === this.parentNode.childNodes[i]) {
-        return i;
+  Object.defineProperty(Element.prototype, "index", {
+    configurable: true,
+    enumerable: true,
+    get: function() {
+      if (Number.isInteger(this._index) && this.parentNode.childNodes[this._index] === this) {
+        return this._index;
       }
+      for (var index = 0; index < this.parentNode.childNodes.length; index++) {
+        if (this === this.parentNode.childNodes[index]) {
+          this._index = index;
+          return index;
+        }
+      }
+    },
+    set: function(newValue) {
+      console.warn("Element's index can not be set. Try to use appendChild/insertBefore etc..");
     }
-  };
+  });
 })(this);
