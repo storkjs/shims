@@ -52,4 +52,4 @@
       console.warn("Element's index can not be set. Try to use appendChild/insertBefore etc..");
     }
   });
-})(this);
+})(window);
