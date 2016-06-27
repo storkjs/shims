@@ -1,4 +1,4 @@
-# data-grid
+# Shims
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/storkjs/shims/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/storkjs/shims.svg)](https://github.com/storkjs/shims/issues)
