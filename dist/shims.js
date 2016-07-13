@@ -52,4 +52,14 @@
       console.warn("Element's index can not be set. Try to use appendChild/insertBefore etc..");
     }
   });
+  Object.defineProperty(Array.prototype, "last", {
+    configurable: true,
+    enumerable: true,
+    get: function() {
+      return this[this.length - 1];
+    },
+    set: function(newValue) {
+      this[this.length - 1] = newValue;
+    }
+  });
 })(window);

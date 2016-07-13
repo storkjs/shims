@@ -334,4 +334,18 @@
 		}
 	});
 
+	/**
+	 * add new getter for arrays to get the last item
+	 */
+	Object.defineProperty(Array.prototype, 'last', {
+		configurable: true,
+		enumerable: true,
+		get: function() {
+			return this[ this.length - 1 ];
+		},
+		set: function(newValue) {
+			this[ this.length - 1 ] = newValue;
+		}
+	});
+
 })(window); // main scope we are running at (if 'this' is passed then we will be compatible with node 'module.reports' style)
