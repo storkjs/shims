@@ -338,8 +338,8 @@
 	 * add new getter for arrays to get the last item
 	 */
 	Object.defineProperty(Array.prototype, 'last', {
-		configurable: true,
-		enumerable: true,
+		configurable: false,
+		enumerable: false,
 		get: function() {
 			return this[ this.length - 1 ];
 		},
