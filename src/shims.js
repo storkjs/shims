@@ -18,10 +18,10 @@
 	}
 
 	/**
-	 * isInteger polyfill for IE
+	 * isInteger polyfill for IE and PhantomJS
 	 */
 	if(!Number.isInteger) {
-		Number.prototype.isInteger = function isInteger(value) {
+		Number.isInteger = function isInteger(value) {
 			return (typeof value === "number" && isFinite(value) && Math.floor(value) === value);
 		};
 	}

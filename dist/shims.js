@@ -15,7 +15,7 @@
     window.CustomEvent = CustomEvent;
   }
   if (!Number.isInteger) {
-    Number.prototype.isInteger = function isInteger(value) {
+    Number.isInteger = function isInteger(value) {
       return typeof value === "number" && isFinite(value) && Math.floor(value) === value;
     };
   }
